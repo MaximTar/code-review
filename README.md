@@ -13,7 +13,7 @@ black [--diff] linters_example.py
 ### mypy
 
 ```shell
-mypy mypy_example.py
+mypy [--strict] mypy_example.py
 ```
 
 ### bandit
