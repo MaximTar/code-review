@@ -7,12 +7,12 @@ def compress_message(msg: str) -> str:
         elif counter == 1:
             output_string += msg[i]
         else:
-            # из мелочей: output_string += str(counter) + msg[i]
+            # fixme NIT output_string += str(counter) + msg[i]
             output_string += f"{counter}{msg[i]}"
             counter = 1
 
     if counter > 1:
-        # аналогично: output_string += str(counter) + msg[-1]
+        # fixme NIT аналогично: output_string += str(counter) + msg[-1]
         output_string += f"{counter}{msg[-1]}"
     else:
         output_string += msg[-1]

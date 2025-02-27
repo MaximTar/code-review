@@ -6,7 +6,7 @@ SPECIAL_SYMBOLS = "!@#$%&*+"
 def remove_matching_characters(chars_to_remove: str, input_str: str):
     found_match = False
     for input_char in input_str:
-        # лишний цикл убираем
+        # fixme лишний цикл убираем
         # for char_to_remove in chars_to_remove:
         #     if input_char == char_to_remove:
         #         found_match = True

@@ -1,4 +1,4 @@
-q1 = 'QWERTYUIOPASDFGHJKLZXCVBNM'  # есть string.ascii_uppercase
+q1 = 'QWERTYUIOPASDFGHJKLZXCVBNM'  # fixme есть string.ascii_uppercase
 q2 = 'qwertyuiopasdfghjklzxcvbnm'
 q3 = '!@#$%&*+'
 q4 = '1234567890'
@@ -6,14 +6,14 @@ q4 = '1234567890'
 def q(q, s):
     f = False
     for S in s:
-        for Q in q:  # в этом цикле нет необходимости
+        for Q in q:  # fixme в этом цикле нет необходимости
             if(S == Q):
                 f = True
                 s = s.replace(Q, "")
     return f, s
 
 print("Введите число количества паролей:")
-flag = True  # не нужен
+flag = True  # fixme не нужен
 while (flag):
     try:
         n = int(input())

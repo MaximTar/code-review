@@ -36,7 +36,7 @@ def calculate_outliers(input_list: list[int]) -> int:
     lower_bound = first_quartile - 1.5 * iqr
     upper_bound = third_quartile + 1.5 * iqr
 
-    # можно немного сократить
+    # fixme можно немного сократить
     # outlier_count = 0
     # for element in input_list:
     #     if element < lower_bound or element > upper_bound:
